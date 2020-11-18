@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
 }
-.all-projects-iframe {
+.all-projects-wrapper {
   position: absolute;
   max-height: calc(-64px + 100vh);
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -21,18 +21,18 @@
   z-index: 1000;
 }
 
-.all-projects-iframe-item {
+.all-projects-wrapper-item {
   position: relative;
   color: #2d3436;
 }
 
-.all-projects-iframe-item-bg {
+.all-projects-wrapper-item-bg {
   width: 95px;
   height: 70px;
   padding: 10px 5px 5px 5px;
 }
 
-.all-projects-iframe-item-descr {
+.all-projects-wrapper-item-descr {
   top: 0;
   position: absolute;
   display: -webkit-box;
@@ -56,25 +56,25 @@
   transition: .2s background;
 }
 
-.all-projects-iframe-item-descr:hover {
+.all-projects-wrapper-item-descr:hover {
   background: #dfe6e9;
   z-index: 2;
 }
 
-.all-projects-iframe-item-descr:hover .all-projects-wrapper-item-icon {
+.all-projects-wrapper-item-descr:hover .all-projects-wrapper-item-icon {
   top: -5px;
 }
 
-.all-projects-iframe-item-descr:hover .all-projects-wrapper-item-label {
+.all-projects-wrapper-item-descr:hover .all-projects-wrapper-item-label {
   word-break: break-all;
   white-space: normal;
 }
 
-.all-projects-iframe-item-descr:active {
+.all-projects-wrapper-item-descr:active {
   background: #cad5da;
 }
 
-.all-projects-iframe-item-icon {
+.all-projects-wrapper-item-icon {
   top: 0;
   position: relative;
   font-size: 25px;
@@ -83,12 +83,12 @@
   transition: .2s top;
 }
 
-.all-projects-iframe-item img.all-projects-wrapper-item-icon {
+.all-projects-wrapper-item img.all-projects-wrapper-item-icon {
   width: 95px;
   height: 30px;
 }
 
-.all-projects-iframe-item-label {
+.all-projects-wrapper-item-label {
   font-weight: 600;
   margin-top: 10px;
   overflow: hidden;
