@@ -1,0 +1,173 @@
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.all-projects-iframe {
+  position: absolute;
+  max-height: calc(-64px + 100vh);
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: none;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 10px;
+  z-index: 1000;
+}
+
+.all-projects-iframe-item {
+  position: relative;
+  color: #2d3436;
+}
+
+.all-projects-iframe-item-bg {
+  width: 95px;
+  height: 70px;
+  padding: 10px 5px 5px 5px;
+}
+
+.all-projects-iframe-item-descr {
+  top: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 5px 5px 5px;
+  width: 95px;
+  -webkit-transition: .2s background;
+  transition: .2s background;
+}
+
+.all-projects-iframe-item-descr:hover {
+  background: #dfe6e9;
+  z-index: 2;
+}
+
+.all-projects-iframe-item-descr:hover .all-projects-wrapper-item-icon {
+  top: -5px;
+}
+
+.all-projects-iframe-item-descr:hover .all-projects-wrapper-item-label {
+  word-break: break-all;
+  white-space: normal;
+}
+
+.all-projects-iframe-item-descr:active {
+  background: #cad5da;
+}
+
+.all-projects-iframe-item-icon {
+  top: 0;
+  position: relative;
+  font-size: 25px;
+  color: #636e72;
+  -webkit-transition: .2s top;
+  transition: .2s top;
+}
+
+.all-projects-iframe-item img.all-projects-wrapper-item-icon {
+  width: 95px;
+  height: 30px;
+}
+
+.all-projects-iframe-item-label {
+  font-weight: 600;
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 85px;
+}
+</style>
+
+
+<div class="all-projects-wrapper">
+        <a href="https://www.onlinetur.ru/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <img class="all-projects-wrapper-item-icon" src="img/ot.svg" alt="">
+                <div class="all-projects-wrapper-item-label">OnlineTur</div>
+            </div>
+        </a>
+        <a href="https://www.travel-skidki.ru/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <img class="all-projects-wrapper-item-icon" src="img/ts.svg" alt="">
+                <div class="all-projects-wrapper-item-label">Travel-Skidki</div>
+            </div>
+        </a>
+        <a href="https://www.bonus-online.ru/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <img class="all-projects-wrapper-item-icon" src="img/bo.png" alt="">
+                <div class="all-projects-wrapper-item-label">Bonus-Online</div>
+            </div>
+        </a>
+        <a href="https://www.skidki-online.ru/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <img class="all-projects-wrapper-item-icon" src="img/so.svg" alt="">
+                <div class="all-projects-wrapper-item-label">Skidki-Online</div>
+            </div>
+        </a>
+        <a href="https://stuzon.com/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <img class="all-projects-wrapper-item-icon" src="img/s.svg" alt="">
+                <div class="all-projects-wrapper-item-label">Stuzon</div>
+            </div>
+        </a>
+        <a href="https://ateston.com/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <img class="all-projects-wrapper-item-icon" src="img/a.svg" alt="">
+                <div class="all-projects-wrapper-item-label">Ateston</div>
+            </div>
+        </a>
+        <a href="https://distant-office.ru/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <img class="all-projects-wrapper-item-icon" src="img/do.svg" alt="">
+                <div class="all-projects-wrapper-item-label">Distant-Office</div>
+            </div>
+        </a>
+        <a href="https://zagrebon.com/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <img class="all-projects-wrapper-item-icon" src="img/z.svg" alt="">
+                <div class="all-projects-wrapper-item-label">Zagrebon</div>
+            </div>
+        </a>
+        <a href="https://agent-online.ru/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <div class="all-projects-wrapper-item-icon">AO</div>
+                <div class="all-projects-wrapper-item-label">Agent-Online</div>
+            </div>
+        </a>
+        <a href="https://bookidom.com/" target="_blank" class="all-projects-wrapper-item">
+            <div class="all-projects-wrapper-item-bg"></div>
+            <div class="all-projects-wrapper-item-descr">
+                <div class="all-projects-wrapper-item-icon">BD</div>
+                <div class="all-projects-wrapper-item-label">Bookidom</div>
+            </div>
+        </a>
+    </div>
